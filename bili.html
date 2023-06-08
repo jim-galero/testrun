@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+	body {
+        background-image: url('https://i.pinimg.com/736x/06/26/13/062613231a04bcea7bdbe83a8ad1c63c.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+	
+	.products {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 20px;
+	}
+
+	.product {
+		width: 300px;
+		padding: 20px;
+		margin: 20px;
+		background-color: #fff;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	}
+
+	.product img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	.product h3 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.product p {
+		margin-bottom: 10px;
+	}
+
+	.product button {
+		padding: 10px 20px;
+		background-color: #333;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="checkoutkadito.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <h1>Welcome to BEBE TIME ONLINE</h1>
+    <p>Choose ONE (1) which of the bebe time services you want to avail below!</p>
+    <a href="#" class="btn">Shop Now</a>
+  </section>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/f5/8b/88/f58b88fdc018e1d331dfe0a172c8e27c.jpg" alt="Product 1">
+      <h3>Unli Cuddles</h3>
+	  <p>Introducing the most intimate form of love: Cuddles. It helps you sleep better, feel connected to your partner, warmth feeling and comfort with you and your partner.</p>
+      <p>$0.01</p>
+	  <button onClick="addToCart('Unli Cuddles', 0.01)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="data:image/jpeg;base64,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" alt="Product 2">
+      <h3>Making Out</h3>
+	  <p>It is also one of the most intimate forms of love. Studies have shown that making out actually burns calories, so what's holding you back? Let's make out.</p>
+      <p>$0.01</p>
+      <button onClick="addToCart('Making Out', 0.01)">Add to Cart</button>
+    </div>
+	
+	<div class="product">
+	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ_q1lWTQwY86RoWSWrOPtudbxseaO4ztFGw&usqp=CAU" alt="Product 3">
+	  <h3>Goodnight Sleep</h3>
+      <p>This makes you feel very energized, allowing you to put in more work, as your body has been well rested and is capable to exert more effort for the next activities.</p>
+      <p>$0.01</p>
+      <button onClick="addToCart('Goodnight Sleep', 0.01)">Add to Cart</button>
+    </div>
+  </section>
+ <footer>
+	<p>&copy; Bebe Time Online. All rights reserved.</p>
+</footer>
+	<script src="javako.js"></script>
+</body>
+</html>

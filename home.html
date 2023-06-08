@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: url('https://i.pinimg.com/736x/ed/75/f3/ed75f335d31012cb3c1742164c946bd0.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }  
+	
+    header {
+	  background-image: url('https://i.pinimg.com/736x/ed/75/f3/ed75f335d31012cb3c1742164c946bd0.jpg');
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }  
+	
+    main {
+      padding: 20px;
+    }
+	
+	button {
+		
+	}
+  </style>
+  
+  <script>
+    function redirectToPage(pageName) {
+      window.location.href = pageName + '.html';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Happy 19th Birthday, love!</h1>
+  </header>
+  <main>
+    <button onclick="redirectToPage('info')"style="font-weight: bold;">INTRO</button>
+    <button onclick="redirectToPage('photos')"style="font-weight: bold;">PICS</button>
+    <button onclick="redirectToPage('bili')" style="font-weight: bold;">SHOPEE</button>
+    <button onclick="redirectToPage('page4')" style="font-weight: bold;">?!?!?!?</button>
+  </main>
+</body>
+</html>
